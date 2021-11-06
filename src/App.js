@@ -35,7 +35,7 @@ const App = () => {
   }, [])
 
   const columns = [
-    { headerName: 'Name', field: 'name', flex: 1 },
+    { headerName: 'Name', field: 'symbol', flex: 1 },
     { headerName: '24h', field: 'percentChange24h', flex: 1 },
     { headerName: '7d', field: 'percentChange7d', flex: 1 },
     { headerName: '30d', field: 'percentChange30d', flex: 1 },
