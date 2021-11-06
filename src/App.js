@@ -54,6 +54,7 @@ const App = () => {
           onGridReady,
           suppressExcelExport: true,
           suppressContextMenu: true,
+          enableCellTextSelection: true,
           localeText: {
             filterOoo: 'Фільтр',
             searchOoo: 'Пошук',
