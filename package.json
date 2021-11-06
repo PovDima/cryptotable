@@ -23,6 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://povdima.github.io/cryptotable",
   "eslintConfig": {
     "extends": [
       "react-app",
