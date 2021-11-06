@@ -20,7 +20,7 @@ const App = () => {
   }, []);
 
   const getInfo = async () => {
-    const { data: { cryptoCurrencyList: row } } = await (await fetch('https://api.coinmarketcap.com/data-api/v3/cryptocurrency/listing?start=1&limit=1000&sortBy=percent_Change_7d&sortType=desc&convert=USD,BTC,ETH&cryptoType=all&tagType=all&audited=false&aux=ath,atl,high24h,low24h,num_market_pairs,cmc_rank,date_added,max_supply,circulating_supply,total_supply,volume_7d,volume_30d')).json()
+    const { data: { cryptoCurrencyList: row } } = await (await fetch('https://api.coinmarketcap.com/data-api/v3/cryptocurrency/listing?start=1&limit=10000&sortBy=market_cap&sortType=desc&convert=USD,BTC,ETH&cryptoType=all&tagType=all&audited=false&aux=ath,atl,high24h,low24h,num_market_pairs,cmc_rank,date_added,max_supply,circulating_supply,total_supply,volume_7d,volume_30d')).json()
     setRowData(row.map(r => ({
       ...r,
       "percentChange24h": r.quotes[0].percentChange24h,
